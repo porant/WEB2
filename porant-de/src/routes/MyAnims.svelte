@@ -4,6 +4,8 @@
 		fly,
 	} from 'svelte/transition';
 
+    import { on } from 'svelte/events';
+
     class Anim {
         name = "";
         animation = "";
@@ -39,21 +41,24 @@
         }
     ]
 
+
 </script>
+
+
 <section class="card_menu" in:fly={{ y: 200, duration: 2000 }} out:fade>
     {#each ANIMS as anim}
         <div class="block card card-hover p-4">
             <header class="card-header">
-                <h1 class="h1">
+                <h1 class="h3">
                     <div class="w-full">
                         <span class="ins">{anim.name}</span>
                     </div>
-                    <div>
+                    <div class="w-full">
                         <video src={anim.animation}
                             muted
                             autoplay
                             loop
-                        ><track kind="captions" /></video>
+                        ></video>
                     </div>
                     <hr class="hr border-t-8" />
                 </h1>
@@ -75,20 +80,25 @@
 </section>
 
 
-
-
-
-
-
-
 <style>
     .card_menu {
         display: grid;
-        padding: 10px;
+        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+        grid-template-rows: 1;
+        padding: 0px;
+        transition: all 0.5s ease-in-out;
     }
+
     .card {
         margin: 5px;
         text-align: center;
     }
+
+    .card-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
 
 </style>

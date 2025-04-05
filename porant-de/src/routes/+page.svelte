@@ -18,9 +18,9 @@
   </span>
   {/snippet}
   {#snippet trail()}
-    <a href="mailto:porant@gmail.com" class="btn green"><Mail /></a>
-    <a href="https://discord.gg/e6wkfyBDGV" class="btn green"><BotMessageSquare/></a>
-    <a href="https://t.me/P0RANT" class="btn green"><Send/></a>
+    <a href="mailto:porant@gmail.com" class="btn green" target="_blank"><Mail /></a>
+    <a href="https://discord.gg/e6wkfyBDGV" class="btn green" target="_blank"><BotMessageSquare/></a>
+    <a href="https://t.me/P0RANT" class="btn green" target="_blank"><Send/></a>
   {/snippet}
 </AppBar>
 
