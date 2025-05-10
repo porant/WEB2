@@ -13,9 +13,6 @@
             <span class="icon"></span>
         </div>
         <div class="placeholder">
-            work in progress...
-        </div>
-        <div class="placeholder">
             <div class="spinner">
                 <div>PT</div>
                 <div>PT</div>
@@ -23,6 +20,23 @@
                 <div>PT</div>
                 <div>PT</div>
                 <div>PT</div>
+            </div>
+        </div>
+
+        <div class="placeholder">
+            <div class="header">My ANIMS:</div>
+            <div>
+                <video loop autoplay muted>
+                    <source src="https://file.porant.de/s/ArpG4XyBxWK5xdK/download/BlackCat.mp4">
+                </video>
+
+                <video loop autoplay muted>
+                    <source src="https://file.porant.de/s/8g5kswpFHwZyHjk/download/MI%20BG.mp4">
+                </video>
+
+                <video loop autoplay muted>
+                    <source src="https://file.porant.de/s/NaRbHsnmHoPmQm5/download/STINGER.mp4"> 
+                </video>
             </div>
         </div>
     </body>
@@ -55,7 +69,10 @@
             background-color: #202020;
             
         }
-
+        video {
+            width: 100%;
+            height: auto;
+        }
         .icon {
             font-size: 2rem;
             color: #b3ff00;
@@ -83,7 +100,7 @@
         }
 
         .spinner > div {
-            background-color: rgba(65, 64, 64, 0.9);
+            background-color: rgba(31, 31, 31, 0.9);
             height: 100%;
             position: absolute;
             width: 100%;
@@ -140,13 +157,15 @@
             margin-top: 25px;
             padding: 2px;
             text-align: center;
-            width: 50%;
+            width: 75%;
             align-self: center;
             justify-self: center;
-            background-color: #202020;
+            background-color: #313131;
             border-radius: 5px;
             color: #b3ff00;
             box-shadow: 3px 3px 10px 3px #00000093;
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
         }
 
     </style>
