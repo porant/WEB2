@@ -15,14 +15,16 @@
         <div class="placeholder">
             work in progress...
         </div>
-        <div class="spinner">
-            <div>PT</div>
-            <div>PT</div>
-            <div>PT</div>
-            <div>PT</div>
-            <div>PT</div>
-            <div>PT</div>
-          </div>
+        <div class="placeholder">
+            <div class="spinner">
+                <div>PT</div>
+                <div>PT</div>
+                <div>PT</div>
+                <div>PT</div>
+                <div>PT</div>
+                <div>PT</div>
+            </div>
+        </div>
     </body>
 
     <style>
@@ -68,27 +70,27 @@
             margin: 0px;
             background-color: #202020;
             color: #b3ff00;
-            box-shadow: 3px 3px 10px 3px #000000;
+            box-shadow: 3px 3px 10px 3px #00000093;
         }
 
         .spinner {
-            margin-top: 40px;
             width: 57.6px;
             height: 57.6px;
-            animation: spinner-y0fdc1 2.8s infinite ease;
+            animation: spinner-y0fdc1 5.8s infinite ease;
             transform-style: preserve-3d;
             align-self: center;
             justify-self: center;
         }
 
         .spinner > div {
-            background-color: #313131;
+            background-color: rgba(65, 64, 64, 0.9);
             height: 100%;
             position: absolute;
             width: 100%;
-            border: 2.9px solid #202020;
+            border: 2px solid #313131;
             color: #b3ff00;
             text-align: center;
+            line-height: 57.6px;
             font-size: 2rem;
         }
 
@@ -135,12 +137,16 @@
         }
 
         .placeholder {
-            margin-top: 40%;
+            margin-top: 25px;
             padding: 2px;
             text-align: center;
+            width: 50%;
+            align-self: center;
+            justify-self: center;
             background-color: #202020;
+            border-radius: 5px;
             color: #b3ff00;
-            box-shadow: 3px 3px 10px 3px #000000;
+            box-shadow: 3px 3px 10px 3px #00000093;
         }
 
     </style>
