@@ -25,6 +25,29 @@
             background-color: #202020;
             
         }
+
+        .container {
+            display: flex;
+        }
+
+        .placeholder {
+            flex: 1;
+            margin: 0 5px;
+            margin-top: 25px;
+            padding: 2px;
+            text-align: center;
+            width: 75%;
+            align-self: center;
+            justify-self: center;
+            background-color: #313131;
+            border-radius: 5px;
+            color: #b3ff00;
+            box-shadow: 3px 3px 10px 3px #00000093;
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+            border: #b3ff00 solid 1px;
+        }
+
         video {
             width: 100%;
             height: auto;
@@ -114,18 +137,3 @@
         }
         }
 
-        .placeholder {
-            margin-top: 25px;
-            padding: 2px;
-            text-align: center;
-            width: 75%;
-            align-self: center;
-            justify-self: center;
-            background-color: #313131;
-            border-radius: 5px;
-            color: #b3ff00;
-            box-shadow: 3px 3px 10px 3px #00000093;
-            -webkit-backdrop-filter: blur(10px);
-            backdrop-filter: blur(10px);
-            border: #b3ff00 solid 1px;
-        }
