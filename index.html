@@ -1,12 +1,24 @@
 <!DOCTYPE html>
 <html>
+
     <head>
+        <link rel="stylesheet" href="style.css">
+
         <title>Porant.de</title>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+        <link rel="manifest" href="icons/site.webmanifest">
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=Sofia+Sans+Semi+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
         <script defer src="https://litics.porant.de/script.js" data-website-id="e810b1bf-a3e0-4340-a0ff-8105e79ffcee"></script>
+    
     </head>
+
     <body>
         <div class="header">
             <span>Porant.de</span>
@@ -40,139 +52,5 @@
             </div>
         </div>
     </body>
-
-    <style>
-        .silkscreen-regular {
-            font-family: "Silkscreen", sans-serif;
-            font-weight: 400;
-        }
-
-        body {
-            margin: 0;
-            justify-content: center;
-            align-items: center;
-            font-family: "Silkscreen", sans-serif;
-            background:
-                radial-gradient(50% 50% at 100% 0,#202020 0%  5% ,#313131 6%  15%,#202020 16% 25%,#313131 26% 35%,#202020 36% 45%,
-                #313131 46% 55%,#202020 56% 65%,#313131 66% 75%,#202020 76% 85%,#313131 86% 95%,
-                #0000 96%),
-                radial-gradient(50% 50% at 0 100%,#202020 0%  5% ,#313131 6%  15%,#202020 16% 25%,#313131 26% 35%,#202020 36% 45%,
-                #313131 46% 55%,#202020 56% 65%,#313131 66% 75%,#202020 76% 85%,#313131 86% 95%,
-                #0000 96%),
-                radial-gradient(50% 50%,#202020 0%  5% ,#313131 6%  15%,#202020 16% 25%,#313131 26% 35%,#202020 36% 45%,
-                #313131 46% 55%,#202020 56% 65%,#313131 66% 75%,#202020 76% 85%,#313131 86% 95%,
-                #0000 96%),
-                radial-gradient(50% 50%,#202020 0%  5% ,#313131 6%  15%,#202020 16% 25%,#313131 26% 35%,#202020 36% 45%,
-                #313131 46% 55%,#202020 56% 65%,#313131 66% 75%,#202020 76% 85%,#313131 86% 95%,
-                #0000 96%) 32px 32px;
-            background-size: 64px 64px;
-            background-color: #202020;
-            
-        }
-        video {
-            width: 100%;
-            height: auto;
-            filter: grayscale(1) brightness(0.5) ;
-            transition: filter .2s;
-        }
-        video:hover {
-            filter: grayscale(0) brightness(1);
-        }
-        .icon {
-            font-size: 2rem;
-            color: #b3ff00;
-            background-color: #202020;
-        }
-
-        .header {
-            display: flex;
-            justify-content: space-between;
-            text-align: left top;
-            padding: 2px;
-            margin: 0px;
-            background-color: #202020;
-            color: #b3ff00;
-            box-shadow: 3px 3px 10px 3px #00000093;
-        }
-
-        .spinner {
-            width: 57.6px;
-            height: 57.6px;
-            animation: spinner-y0fdc1 5.8s infinite ease;
-            transform-style: preserve-3d;
-            align-self: center;
-            justify-self: center;
-        }
-
-        .spinner > div {
-            background-color: rgba(31, 31, 31, 0.9);
-            height: 100%;
-            position: absolute;
-            width: 100%;
-            border: 2px solid #313131;
-            color: #b3ff00;
-            text-align: center;
-            line-height: 57.6px;
-            font-size: 2rem;
-        }
-
-        .spinner div:nth-of-type(1) {
-        transform: translateZ(-28.8px) rotateY(180deg);
-        }
-
-        .spinner div:nth-of-type(2) {
-        transform: rotateY(-270deg) translateX(50%);
-        transform-origin: top right;
-        }
-
-        .spinner div:nth-of-type(3) {
-        transform: rotateY(270deg) translateX(-50%);
-        transform-origin: center left;
-        }
-
-        .spinner div:nth-of-type(4) {
-        transform: rotateX(90deg) translateY(-50%);
-        transform-origin: top center;
-        }
-
-        .spinner div:nth-of-type(5) {
-        transform: rotateX(-90deg) translateY(50%);
-        transform-origin: bottom center;
-        }
-
-        .spinner div:nth-of-type(6) {
-        transform: translateZ(28.8px);
-        }
-
-        @keyframes spinner-y0fdc1 {
-        0% {
-            transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);
-        }
-
-        50% {
-            transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);
-        }
-
-        100% {
-            transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
-        }
-        }
-
-        .placeholder {
-            margin-top: 25px;
-            padding: 2px;
-            text-align: center;
-            width: 75%;
-            align-self: center;
-            justify-self: center;
-            background-color: #313131;
-            border-radius: 5px;
-            color: #b3ff00;
-            box-shadow: 3px 3px 10px 3px #00000093;
-            -webkit-backdrop-filter: blur(10px);
-            backdrop-filter: blur(10px);
-            border: #b3ff00 solid 1px;
-        }
-
-    </style>
+    
 </html>
