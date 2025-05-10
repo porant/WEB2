@@ -10,7 +10,6 @@
     <body>
         <div class="header">
             <span>Porant.de</span>
-            <span class="icon"></span>
         </div>
         <div class="placeholder">
             <div class="spinner">
@@ -26,10 +25,11 @@
         <div class="placeholder">
             <div class="header">My ANIMS:</div>
             <div>
+                <p>BlackCat</p>
                 <video loop autoplay muted>
                     <source src="https://file.porant.de/s/ArpG4XyBxWK5xdK/download/BlackCat.mp4">
                 </video>
-
+                <p>MI</p>
                 <video loop autoplay muted>
                     <source src="https://file.porant.de/s/8g5kswpFHwZyHjk/download/MI%20BG.mp4">
                 </video>
@@ -72,6 +72,11 @@
         video {
             width: 100%;
             height: auto;
+            filter: grayscale(1) brightness(0.5) ;
+            transition: filter .2s;
+        }
+        video:hover {
+            filter: grayscale(0) brightness(1);
         }
         .icon {
             font-size: 2rem;
@@ -166,6 +171,7 @@
             box-shadow: 3px 3px 10px 3px #00000093;
             -webkit-backdrop-filter: blur(10px);
             backdrop-filter: blur(10px);
+            border: #b3ff00 solid 1px;
         }
 
     </style>
