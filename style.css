@@ -28,6 +28,10 @@
 
         .container {
             display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            flex-wrap: wrap;
         }
 
         .placeholder {
@@ -55,6 +59,15 @@
             transition: filter .2s;
         }
         video:hover {
+            filter: grayscale(0) brightness(1);
+        }
+        .emotes{
+            width: 100%;
+            height: auto;
+            filter: grayscale(1) brightness(0.5) ;
+            transition: filter .2s;
+        }
+        .emotes:hover {
             filter: grayscale(0) brightness(1);
         }
         .icon {
